@@ -41,6 +41,24 @@ ruff check .
 ruff check --fix .
 ```
 
+## Watch Mode
+
+This project includes a watch mode that automatically runs a file whenever it changes. This is useful during development for quick feedback loops.
+
+To use watch mode:
+
+```bash
+make watch FILE=path/to/your/file.py
+```
+
+For example:
+
+```bash
+make watch FILE=sum_of_two_numbers.py
+```
+
+The watcher will monitor the specified file and re-run it automatically whenever changes are saved. Press Ctrl+C to stop watching.
+
 ## Project Organization
 
 - Each algorithm and data structure will be implemented in its own file
