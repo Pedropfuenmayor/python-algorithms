@@ -59,6 +59,10 @@ make watch FILE=sum_of_two_numbers.py
 
 The watcher will monitor the specified file and re-run it automatically whenever changes are saved. Press Ctrl+C to stop watching.
 
+## Quick Run Hotkey
+
+You can quickly run the current Python file by pressing `Command + J` followed by `K`.
+
 ## Project Organization
 
 - Each algorithm and data structure will be implemented in its own file
