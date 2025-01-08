@@ -26,6 +26,32 @@ source venv/bin/activate  # On Unix/macOS
 pip install -r requirements.txt
 ```
 
+## Running Tests
+
+### Run All Tests
+
+```bash
+pytest
+```
+
+### Run Tests in a Specific Directory
+
+```bash
+pytest src/sum_of_two_numbers/
+```
+
+### Watch Mode for Tests
+
+To automatically run tests when files change:
+
+```bash
+# Watch all tests
+ ptw
+
+# Watch specific directory
+ ptw  src/sum_of_two_numbers/
+```
+
 ## Code Style
 
 This project uses Ruff for code formatting and linting:
