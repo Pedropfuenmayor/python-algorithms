@@ -12,6 +12,10 @@ Examples:
 
 
 def two_sum_v1(nums, target):
+    """
+    Time Complexity: O(n²) - uses nested loops to check all pairs
+    Space Complexity: O(1) - uses constant extra space
+    """
     first_idx = 0
     last_idx = len(nums)
 
