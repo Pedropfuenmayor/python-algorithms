@@ -28,5 +28,33 @@ def two_sum_v1(nums, target):
     return False
 
 
+def two_sum_v2(nums, target):
+    if len(nums) < 2:
+        return False
+
+    if nums[0] + nums[1] > target:
+        return False
+
+    if nums[len(nums) - 1] + nums[len(nums) - 2] < target:
+        return False
+
+    left_index = 0
+    right_index = len(nums) - 1
+
+    while left_index < right_index:
+        total_sum = nums[right_index] + nums[left_index]
+
+        if total_sum == target:
+            return True
+
+        elif total_sum < target:
+            left_index += 1
+
+        elif total_sum > target:
+            right_index -= 1
+
+    return False
+
+
 if __name__ == "__main__":
-    print(f"Result: {two_sum_v1([1,3,4,6,8,10,13], 13)}")
+    print(f"Result: {two_sum_v2([1,3,4,6,8,10,13], 13)}")

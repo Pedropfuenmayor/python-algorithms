@@ -87,7 +87,7 @@ The watcher will monitor the specified file and re-run it automatically whenever
 
 ## Quick Run Hotkey
 
-You can quickly run the current Python file by pressing `Command + J` followed by `K`.
+You can quickly run the current Python file by pressing `Control + J`.
 
 ## Project Organization
 
