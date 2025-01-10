@@ -29,6 +29,10 @@ def two_sum_v1(nums, target):
 
 
 def two_sum_v2(nums, target):
+    """
+    Time Complexity: O(n) - uses two pointers to traverse the array once
+    Space Complexity: O(1) - uses constant extra space
+    """
     if len(nums) < 2:
         return False
 
